@@ -8,10 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-image": "url('/background.png')",
+      },
+      colors: {
+        "custom-green": "#143E45",
+        "custom-black": "#1E1F26",
+        "custom-white": "#FFEDED5E",
+        "custom-blue": "#0053F7",
+        "custom-light-green": "#B2E9AA",
+        "custom-light-pink": "#E9AAAA",
+        "custom-light-yellow": "#E9DBAA",
+        "custom-light-blue": "#AAE9E5",
+        "custom-light-purple": "#B2AAE9",
+      },
+      borderRadius: {
+        large: "22px",
+      },
+      rotate: {
+        "rotate-y-180": "rotateY(180deg)",
       },
     },
   },
