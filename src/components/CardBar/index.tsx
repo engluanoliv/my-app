@@ -3,6 +3,7 @@ import {
   KeyboardDoubleArrowUpRounded,
 } from "@mui/icons-material";
 import Button from "../Button";
+import Link from "next/link";
 
 interface CardBarTypeProps {
   name: string;
@@ -52,8 +53,10 @@ export default function CardBar({ name, email }: CardBarTypeProps) {
             </p>
           </div>
           <div className="flex justify-around items-center mt-4">
-            <Button title="Message" />
-            <Button title="Hire" />
+            {/* <Button title="Message" /> */}
+            <Link href={"/"}>
+              <Button title="Back" />
+            </Link>
           </div>
         </div>
       </div>
