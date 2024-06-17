@@ -1,5 +1,6 @@
 import "./globals.css";
 import Template from "./template";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -15,7 +16,10 @@ export default function RootLayout({
         />
       </head>
       <body className="h-screen overflow-hidden bg-custom-image backdrop-blur-md bg-cover bg-center">
-        <Template>{children}</Template>
+        <Template>
+          {children}
+          <Analytics />
+        </Template>
       </body>
     </html>
   );
