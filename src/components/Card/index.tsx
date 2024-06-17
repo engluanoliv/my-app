@@ -23,12 +23,17 @@ export default function Card({ frontContent, backContent }: CardTypeProps) {
     }, 300);
   }, [isFlipped]);
 
+  function onPan() {
+    setIsFlipped((prevValue) => !prevValue);
+  }
+
   return (
     <>
       <motion.div
         className="relative w-[400px] h-[268px] flex justify-center items-center rounded-large bg-custom-black overflow-hidden"
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 1 }}
+        onPan={onPan}
       >
         <KeyboardArrowLeftRounded
           onClick={() => setIsFlipped(!isFlipped)}
