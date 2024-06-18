@@ -21,7 +21,7 @@ export default function Button({
 
   if (title === "Hire")
     className += "  rounded-lg bg-custom-blue text-white text-sm py-2";
-  if (title === "Message") className += "  rounded-lg bg-white text-sm py-2";
+  if (title === "Back") className += "  rounded-lg bg-white text-sm py-2";
 
   if (title === "Send")
     className +=

@@ -12,7 +12,6 @@ export default function About() {
   const frontContent = (
     <>
       <Image
-        className="pb-14"
         src="/profile.png"
         alt="I am not a robot."
         width={190}
