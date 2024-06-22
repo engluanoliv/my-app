@@ -23,7 +23,8 @@ export default function Card({ frontContent, backContent }: CardTypeProps) {
     }, 300);
   }, [isFlipped]);
 
-  function onPan() {
+  function onPan(event, info) {
+    console.log(event, info);
     setIsFlipped((prevValue) => !prevValue);
   }
 
