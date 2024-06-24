@@ -38,18 +38,16 @@ export default function Home() {
           />
         </p>
         {firstTypedCompleted && (
-          <p className="text-2xl font-lato text-custom-green w-[35%]">
+          <p className="text-2xl font-lato text-custom-green">
             <ReactTyped
-              strings={[
-                "my name is Luan and I am a Full Stack Developer from Brazil",
-              ]}
+              strings={["my name is Luan and I am a Full"]}
               typeSpeed={80}
               showCursor={false}
               onComplete={() => setSecondTypedCompleted(true)}
             />
           </p>
         )}
-        {/* {secondTypedCompleted && (
+        {secondTypedCompleted && (
           <p className="text-2xl pb-4 font-lato text-custom-green">
             <ReactTyped
               strings={["Stack Developer from Brazil"]}
@@ -58,7 +56,7 @@ export default function Home() {
               onComplete={() => setThirdTypedCompleted(true)}
             />
           </p>
-        )} */}
+        )}
         {firstTypedCompleted && secondTypedCompleted && thirdTypedCompleted && (
           <motion.div
             initial={{ opacity: 0, x: -50 }}
