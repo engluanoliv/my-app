@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
+import Button from "../Button";
 
 interface CardTypeProps {
   frontContent: React.ReactNode;
@@ -25,6 +26,8 @@ export default function Card({ frontContent, backContent }: CardTypeProps) {
 
   return (
     <>
+      <Button onClick={() => console.log("aa")} title="Back" />
+
       <Tilt
         gyroscope={true}
         tiltReverse
