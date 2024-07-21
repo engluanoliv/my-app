@@ -59,9 +59,9 @@ export default function CardBar({ name, email }: CardBarTypeProps) {
 
           <div className="flex justify-around items-center mt-4">
             {/* <Button title="Message" /> */}
-            <Link href={"/"}>
-              <Button title="Back" />
-            </Link>
+            {/* <Link href={"/"}> */}
+            <Button title="Back" />
+            {/* </Link> */}
             <div className="flex items-center justify-center">
               <Link
                 target="_blank"
