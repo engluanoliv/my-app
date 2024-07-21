@@ -26,7 +26,7 @@ export default function Card({ frontContent, backContent }: CardTypeProps) {
   return (
     <>
       <Tilt
-        gyroscope
+        gyroscope={true}
         tiltReverse
         className="relative w-[400px] h-[268px] flex justify-center items-center rounded-large bg-custom-black overflow-hidden"
       >
