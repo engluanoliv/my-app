@@ -1,6 +1,10 @@
 import {
   DragHandleRounded,
+  Email,
+  GitHub,
+  Instagram,
   KeyboardDoubleArrowUpRounded,
+  LinkedIn,
 } from "@mui/icons-material";
 import Button from "../Button";
 import Link from "next/link";
@@ -52,11 +56,42 @@ export default function CardBar({ name, email }: CardBarTypeProps) {
               Node
             </p>
           </div>
+
           <div className="flex justify-around items-center mt-4">
             {/* <Button title="Message" /> */}
             <Link href={"/"}>
               <Button title="Back" />
             </Link>
+            <div className="flex items-center justify-center">
+              <Link
+                target="_blank"
+                href={`https://instagram.com/engluanoliv`}
+                className="hover:cursor-pointer text-white px-2 hover:scale-110"
+              >
+                <Instagram />
+              </Link>
+              <Link
+                target="_blank"
+                href={`https://linkedin.com/in/engluanoliv`}
+                className="hover:cursor-pointer text-white px-2 hover:scale-110"
+              >
+                <LinkedIn />
+              </Link>
+              <Link
+                target="_blank"
+                href={`https://github.com/engluanoliv`}
+                className="hover:cursor-pointer text-white px-2 hover:scale-110"
+              >
+                <GitHub />
+              </Link>
+              <Link
+                target="_blank"
+                href={`mailto:engluanoliv@gmail.com`}
+                className="hover:cursor-pointer text-white px-2 hover:scale-110"
+              >
+                <Email />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
